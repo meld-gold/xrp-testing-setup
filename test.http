@@ -1,0 +1,628 @@
+@base_url = http://127.0.0.1:5005
+
+### fund  ['gw', 'a1', 'a2', 'a3'] "10000000000"
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "wallet_propose"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "snoPBrXtMeMyMHUVTgbuqAfg1SUTb",
+      "tx_json": {
+        "Account": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "Amount": "10000000000",
+        "Destination": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+        "TransactionType": "Payment",
+        "Fee": "10",
+        "Flags": "0"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "ssHsmyiMtfDPmb4MdcBA33JD7J5T9",
+      "tx_json": {
+        "Account": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+        "TransactionType": "AccountSet",
+        "Fee": "10",
+        "SetFlag": "8"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "wallet_propose"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "snoPBrXtMeMyMHUVTgbuqAfg1SUTb",
+      "tx_json": {
+        "Account": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "Amount": "10000000000",
+        "Destination": "rHp35hmtEzhSxUMpmsvuGadnUNoNHJJbtF",
+        "TransactionType": "Payment",
+        "Fee": "10",
+        "Flags": "0"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "shCqa8Ph6bTJq2QyumxrwGvLpPawG",
+      "tx_json": {
+        "Account": "rHp35hmtEzhSxUMpmsvuGadnUNoNHJJbtF",
+        "TransactionType": "AccountSet",
+        "Fee": "10",
+        "SetFlag": "8"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "wallet_propose"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "snoPBrXtMeMyMHUVTgbuqAfg1SUTb",
+      "tx_json": {
+        "Account": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "Amount": "10000000000",
+        "Destination": "rwNQyQxRuuviS9LN4JBguEcZJkPZe6mksz",
+        "TransactionType": "Payment",
+        "Fee": "10",
+        "Flags": "0"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "sh7ycuNToU1hrdPBtj2K2qRRwm4BR",
+      "tx_json": {
+        "Account": "rwNQyQxRuuviS9LN4JBguEcZJkPZe6mksz",
+        "TransactionType": "AccountSet",
+        "Fee": "10",
+        "SetFlag": "8"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "wallet_propose"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "snoPBrXtMeMyMHUVTgbuqAfg1SUTb",
+      "tx_json": {
+        "Account": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh",
+        "Amount": "10000000000",
+        "Destination": "raSM8SouvjgWdWe2e7KW6egbaJRgV466n8",
+        "TransactionType": "Payment",
+        "Fee": "10",
+        "Flags": "0"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "shycSZfEo8CcLXuidhBLchmQi2LcR",
+      "tx_json": {
+        "Account": "raSM8SouvjgWdWe2e7KW6egbaJRgV466n8",
+        "TransactionType": "AccountSet",
+        "Fee": "10",
+        "SetFlag": "8"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+### trust set rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J ['a1', 'a2', 'a3'] 10000 USD 262144
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "shCqa8Ph6bTJq2QyumxrwGvLpPawG",
+      "tx_json": {
+        "TransactionType": "TrustSet",
+        "Account": "rHp35hmtEzhSxUMpmsvuGadnUNoNHJJbtF",
+        "Fee": "10",
+        "Flags": 262144,
+        "LimitAmount": {
+          "currency": "USD",
+          "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+          "value": "10000"
+        }
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "sh7ycuNToU1hrdPBtj2K2qRRwm4BR",
+      "tx_json": {
+        "TransactionType": "TrustSet",
+        "Account": "rwNQyQxRuuviS9LN4JBguEcZJkPZe6mksz",
+        "Fee": "10",
+        "Flags": 262144,
+        "LimitAmount": {
+          "currency": "USD",
+          "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+          "value": "10000"
+        }
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "shycSZfEo8CcLXuidhBLchmQi2LcR",
+      "tx_json": {
+        "TransactionType": "TrustSet",
+        "Account": "raSM8SouvjgWdWe2e7KW6egbaJRgV466n8",
+        "Fee": "10",
+        "Flags": 262144,
+        "LimitAmount": {
+          "currency": "USD",
+          "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+          "value": "10000"
+        }
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+### pay gw a1
+    {
+        "currency" : "USD",
+        "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+        "value": "1000"
+    }
+     None None 0
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "ssHsmyiMtfDPmb4MdcBA33JD7J5T9",
+      "tx_json": {
+        "Account": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+        "Amount": {
+          "currency": "USD",
+          "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+          "value": "1000"
+        },
+        "Destination": "rHp35hmtEzhSxUMpmsvuGadnUNoNHJJbtF",
+        "TransactionType": "Payment",
+        "Fee": "10",
+        "Flags": "0"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+### pay gw a2
+    # {
+    #     "currency" : "USD",
+    #     "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+    #     "value": "1000"
+    # }
+    #  None None 0
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "ssHsmyiMtfDPmb4MdcBA33JD7J5T9",
+      "tx_json": {
+        "Account": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+        "Amount": {
+          "currency": "USD",
+          "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+          "value": "1000"
+        },
+        "Destination": "rwNQyQxRuuviS9LN4JBguEcZJkPZe6mksz",
+        "TransactionType": "Payment",
+        "Fee": "10",
+        "Flags": "0"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+### pay gw a2
+    # {
+    #     "currency" : "USD",
+    #     "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+    #     "value": "1000"
+    # }
+    #  None None 0
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "ssHsmyiMtfDPmb4MdcBA33JD7J5T9",
+      "tx_json": {
+        "Account": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+        "Amount": {
+          "currency": "USD",
+          "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+          "value": "1000"
+        },
+        "Destination": "rwNQyQxRuuviS9LN4JBguEcZJkPZe6mksz",
+        "TransactionType": "Payment",
+        "Fee": "10",
+        "Flags": "0"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+# ### offer create a1 "100000000"
+#     {
+#         "currency" : "USD",
+#         "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+#         "value": "100"
+#     }
+#      0
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "shCqa8Ph6bTJq2QyumxrwGvLpPawG",
+      "tx_json": {
+        "TransactionType": "OfferCreate",
+        "Account": "rHp35hmtEzhSxUMpmsvuGadnUNoNHJJbtF",
+        "Fee": "10",
+        "Flags": 0,
+        "TakerPays": "100000000",
+        "TakerGets": {
+          "currency": "USD",
+          "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+          "value": "100"
+        }
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+### amm create gw "1000000000"
+    # {
+    #     "currency" : "USD",
+    #     "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+    #     "value": "1010"
+    # }
+    #  0
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "server_state"
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "submit",
+  "params": [
+    {
+      "secret": "ssHsmyiMtfDPmb4MdcBA33JD7J5T9",
+      "tx_json": {
+        "Flags": 0,
+        "Account": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+        "Fee": "2000000",
+        "TradingFee": "0",
+        "Amount": "1000000000",
+        "Amount2": {
+          "currency": "USD",
+          "issuer": "rpqNxjfrBgxebHX7uZn3Ch97PEdnCnnK1J",
+          "value": "1010"
+        },
+        "TransactionType": "AMMCreate"
+      }
+    }
+  ]
+}
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "ledger_accept"
+}
+
+# error: The transaction requires logic that is currently disabled.
+
+### tx lookup A574C7150523B387504C6CDE1DDD0860B2EFA152362E121221574DA4D6DBE2C5 validated None [LedgerEntryType:[AMM],Account]
+
+###
+
+POST {{base_url}}
+Content-Type: application/json
+
+{
+  "method": "tx",
+  "params": [
+    {
+      "transaction": "A574C7150523B387504C6CDE1DDD0860B2EFA152362E121221574DA4D6DBE2C5",
+      "binary": false,
+      "ledger_index": "validated"
+    }
+  ]
+}
