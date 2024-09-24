@@ -6,7 +6,7 @@ import json
 import re
 from collections import defaultdict
 
-port = 5005 # WAS 51234
+port = 51234
 node = '127.0.0.1'
 script = None
 drops_per_xrp = 1_000_000
