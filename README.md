@@ -41,19 +41,19 @@ You need to shell into the Ripple node to do this (see above).
 Check the server:
 
 ```bash
-rippled server_info
+rippled server_info --conf=/shared/rippled.cfg
 ```
 
 Check the genesis account info:
 
 ```bash
-rippled account_info rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh validated strict
+rippled account_info rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh validated strict --conf=/shared/rippled.cfg
 ```
 
 Submit a transaction:
 
 ```bash
-rippled submit 'snoPBrXtMeMyMHUVTgbuqAfg1SUTb' '{ "Account": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh", "Amount": "1000000000", "Destination": "r9wRwVgL2vWVnKhTPdtxva5vdH7FNw1zPs", "TransactionType": "Payment", "Fee": "10" }'
+rippled submit 'snoPBrXtMeMyMHUVTgbuqAfg1SUTb' '{ "Account": "rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh", "Amount": "1000000000", "Destination": "r9wRwVgL2vWVnKhTPdtxva5vdH7FNw1zPs", "TransactionType": "Payment", "Fee": "10" }' --conf=/shared/rippled.cfg
 ```
 
 Source: https://xrpl.org/docs/infrastructure/testing-and-auditing/run-private-network-with-docker#perform-a-test-transaction
@@ -67,7 +67,7 @@ rippled ledger_accept --conf=/shared/rippled.cfg
 Check the transaction was validated:
 
 ```bash
-rippled account_info r9wRwVgL2vWVnKhTPdtxva5vdH7FNw1zPs validated strict
+rippled account_info r9wRwVgL2vWVnKhTPdtxva5vdH7FNw1zPs validated strict --conf=/shared/rippled.cfg
 ```
 
 ## Python setup
@@ -101,7 +101,7 @@ apt install curl
 ```
 
 ```bash
-curl -X POST http://127.0.0.1:5005 \
+curl -X POST http://127.0.0.1:51234 \
    -H "Content-Type: application/json" \
    -d '{ "method": "wallet_propose" }'
 ```
