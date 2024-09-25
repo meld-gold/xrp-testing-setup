@@ -1,18 +1,26 @@
-# Ripple Docker setup
+# Ripple testing setup
+
+A local configuration for testing against XRPL.
 
 Run the Ripple node:
 
 ```bash
-docker compose up
+docker compose up --build
 ```
+
+Starting the container this way automatically starts `rippled` in standalone mode.
+
+## Shelling into the Ripple node
 
 Start a new terminal and shell into the Ripple node:
 
 ```bash
-docker exec -it validator_1 bash
+docker exec -it ripple bash
 ```
 
 ## Starting Ripple
+
+(NOTE: This bit happens automatically when you run `docker compose up`).
 
 Start Ripple in standalone mode:
 
@@ -20,13 +28,15 @@ Start Ripple in standalone mode:
 rippled -a --start --conf=/shared/rippled.cfg
 ```
 
-## Standalone gensis address
+## Standalone genesis account
 
 Address: rHb9CJAWyB4rj91VRWn96DkukG4bwdtyTh
 
 Secret: snoPBrXtMeMyMHUVTgbuqAfg1SUTb ("masterpassphrase")
 
 ## Testing the Ripple server
+
+You need to shell into the Ripple node to do this (see above).
 
 Check the server:
 
